@@ -20,12 +20,19 @@ class BinaryTree {
     }
   }
 
-  // devuelve un array con todos los valores del tree recorriendo en profundidad primero preorden (actual, izquierda, derecha)
   getValues() {
     let result = [];
 
     function traverse(node) {
-      // Tu código aquí
+      result.push(node.value); // Agregar el valor actual al array result
+
+      if (node.left) {
+        traverse(node.left); // Recorrer el subárbol izquierdo
+      }
+
+      if (node.right) {
+        traverse(node.right); // Recorrer el subárbol derecho
+      }
     }
 
     traverse(this);

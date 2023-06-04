@@ -3,19 +3,47 @@
  */
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "IM Fell DW Pica", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 form {
-  margin-top: 4em;
+  margin-top: 1em;
 }
 
 label {
   display: block;
+  display: flex;
+  flex-direction: column;
   margin: 1em 0;
-  font-weight: bold;
+  font-family: "IM Fell DW Pica", serif;
 }
 
 input {
+  font-family: "IM Fell DW Pica", serif;
   display: block;
+  background-color: rgb(35, 8, 8);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.list-item {
+  color: rgb(140, 24, 24);
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/7002683/pexels-photo-7002683.jpeg");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+head {
+  font-family: "IM Fell DW Pica", serif;
+  color: rgb(140, 24, 24);
 }
